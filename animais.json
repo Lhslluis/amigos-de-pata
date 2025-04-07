@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "nome": "Ady",
+        "tipo": "cachorro",
+        "local": "Petz Parque Flamboyant, GOIANIA, GO",
+        "idade": 2,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/b25d3b0a-7be5-49f4-91a5-cc620c5b0e4d.jpeg"
+    },
+    {
+        "id": 2,
+        "nome": "Amora",
+        "tipo": "cachorro",
+        "local": "Petz Ricardo Jafet 24h, SAO PAULO, SP",
+        "idade": 4,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/1a871c71-5c0a-4765-bd77-cf3f310ba22a.jpeg"
+    },
+    {
+        "id": 3,
+        "nome": "Apolo",
+        "tipo": "gato",
+        "local": "Petz Marginal Tiete, SAO PAULO, SP",
+        "idade": 1,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/1ce10236-1abc-4393-92d8-8abf2b2bc7ef.jpeg"
+    },
+    {
+        "id": 4,
+        "nome": "Bangle",
+        "tipo": "gato",
+        "local": "Petz Itaim, SAO PAULO, SP",
+        "idade": 2,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/509920a5-c176-4925-86dd-da041d755c1e.jpeg"
+    },
+    {
+        "id": 5,
+        "nome": "Belinha",
+        "tipo": "cachorro",
+        "local": "Petz Parque Flamboyant, GOIANIA, GO",
+        "idade": 3,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/38aef2e0-4696-4a02-80c6-d951c85c7cb2.jpeg"
+    },
+    {
+        "id": 6,
+        "nome": "Ady",
+        "tipo": "cachorro",
+        "local": "Petz Parque Flamboyant, GOIANIA, GO",
+        "idade": 2,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/b25d3b0a-7be5-49f4-91a5-cc620c5b0e4d.jpeg"
+    },
+    {
+        "id": 7,
+        "nome": "Amora",
+        "tipo": "cachorro",
+        "local": "Petz Ricardo Jafet 24h, SAO PAULO, SP",
+        "idade": 4,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/1a871c71-5c0a-4765-bd77-cf3f310ba22a.jpeg"
+    },
+    {
+        "id": 8,
+        "nome": "Apolo",
+        "tipo": "gato",
+        "local": "Petz Marginal Tiete, SAO PAULO, SP",
+        "idade": 1,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/1ce10236-1abc-4393-92d8-8abf2b2bc7ef.jpeg"
+    },
+    {
+        "id": 9,
+        "nome": "Bangle",
+        "tipo": "gato",
+        "local": "Petz Itaim, SAO PAULO, SP",
+        "idade": 2,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/509920a5-c176-4925-86dd-da041d755c1e.jpeg"
+    },
+    {
+        "id": 10,
+        "nome": "Belinha",
+        "tipo": "cachorro",
+        "local": "Petz Parque Flamboyant, GOIANIA, GO",
+        "idade": 3,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/38aef2e0-4696-4a02-80c6-d951c85c7cb2.jpeg"
+    },
+    {
+        "id": 11,
+        "nome": "Ady",
+        "tipo": "cachorro",
+        "local": "Petz Parque Flamboyant, GOIANIA, GO",
+        "idade": 2,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/b25d3b0a-7be5-49f4-91a5-cc620c5b0e4d.jpeg"
+    },
+    {
+        "id": 12,
+        "nome": "Amora",
+        "tipo": "cachorro",
+        "local": "Petz Ricardo Jafet 24h, SAO PAULO, SP",
+        "idade": 4,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/1a871c71-5c0a-4765-bd77-cf3f310ba22a.jpeg"
+    },
+    {
+        "id": 13,
+        "nome": "Apolo",
+        "tipo": "gato",
+        "local": "Petz Marginal Tiete, SAO PAULO, SP",
+        "idade": 1,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/1ce10236-1abc-4393-92d8-8abf2b2bc7ef.jpeg"
+    },
+    {
+        "id": 14,
+        "nome": "Bangle",
+        "tipo": "gato",
+        "local": "Petz Itaim, SAO PAULO, SP",
+        "idade": 2,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/509920a5-c176-4925-86dd-da041d755c1e.jpeg"
+    },
+    {
+        "id": 15,
+        "nome": "Belinha",
+        "tipo": "cachorro",
+        "local": "Petz Parque Flamboyant, GOIANIA, GO",
+        "idade": 3,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/38aef2e0-4696-4a02-80c6-d951c85c7cb2.jpeg"
+    },
+    {
+        "id": 16,
+        "nome": "Ady",
+        "tipo": "cachorro",
+        "local": "Petz Parque Flamboyant, GOIANIA, GO",
+        "idade": 2,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/b25d3b0a-7be5-49f4-91a5-cc620c5b0e4d.jpeg"
+    },
+    {
+        "id": 17,
+        "nome": "Amora",
+        "tipo": "cachorro",
+        "local": "Petz Ricardo Jafet 24h, SAO PAULO, SP",
+        "idade": 4,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/1a871c71-5c0a-4765-bd77-cf3f310ba22a.jpeg"
+    },
+    {
+        "id": 18,
+        "nome": "Apolo",
+        "tipo": "gato",
+        "local": "Petz Marginal Tiete, SAO PAULO, SP",
+        "idade": 1,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/1ce10236-1abc-4393-92d8-8abf2b2bc7ef.jpeg"
+    },
+    {
+        "id": 19,
+        "nome": "Bangle",
+        "tipo": "gato",
+        "local": "Petz Itaim, SAO PAULO, SP",
+        "idade": 2,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/509920a5-c176-4925-86dd-da041d755c1e.jpeg"
+    },
+    {
+        "id": 20,
+        "nome": "Belinha",
+        "tipo": "cachorro",
+        "local": "Petz Parque Flamboyant, GOIANIA, GO",
+        "idade": 3,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/38aef2e0-4696-4a02-80c6-d951c85c7cb2.jpeg"
+    },
+    {
+        "id": 21,
+        "nome": "Ady",
+        "tipo": "cachorro",
+        "local": "Petz Parque Flamboyant, GOIANIA, GO",
+        "idade": 2,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/b25d3b0a-7be5-49f4-91a5-cc620c5b0e4d.jpeg"
+    },
+    {
+        "id": 22,
+        "nome": "Amora",
+        "tipo": "cachorro",
+        "local": "Petz Ricardo Jafet 24h, SAO PAULO, SP",
+        "idade": 4,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/1a871c71-5c0a-4765-bd77-cf3f310ba22a.jpeg"
+    },
+    {
+        "id": 23,
+        "nome": "Apolo",
+        "tipo": "gato",
+        "local": "Petz Marginal Tiete, SAO PAULO, SP",
+        "idade": 1,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/1ce10236-1abc-4393-92d8-8abf2b2bc7ef.jpeg"
+    },
+    {
+        "id": 24,
+        "nome": "Bangle",
+        "tipo": "gato",
+        "local": "Petz Itaim, SAO PAULO, SP",
+        "idade": 2,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/509920a5-c176-4925-86dd-da041d755c1e.jpeg"
+    },
+    {
+        "id": 25,
+        "nome": "Belinha",
+        "tipo": "cachorro",
+        "local": "Petz Parque Flamboyant, GOIANIA, GO",
+        "idade": 3,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/38aef2e0-4696-4a02-80c6-d951c85c7cb2.jpeg"
+    },
+    {
+        "id": 26,
+        "nome": "Ady",
+        "tipo": "cachorro",
+        "local": "Petz Parque Flamboyant, GOIANIA, GO",
+        "idade": 2,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/b25d3b0a-7be5-49f4-91a5-cc620c5b0e4d.jpeg"
+    },
+    {
+        "id": 27,
+        "nome": "Amora",
+        "tipo": "cachorro",
+        "local": "Petz Ricardo Jafet 24h, SAO PAULO, SP",
+        "idade": 4,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/1a871c71-5c0a-4765-bd77-cf3f310ba22a.jpeg"
+    },
+    {
+        "id": 28,
+        "nome": "Apolo",
+        "tipo": "gato",
+        "local": "Petz Marginal Tiete, SAO PAULO, SP",
+        "idade": 1,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/1ce10236-1abc-4393-92d8-8abf2b2bc7ef.jpeg"
+    },
+    {
+        "id": 29,
+        "nome": "Bangle",
+        "tipo": "gato",
+        "local": "Petz Itaim, SAO PAULO, SP",
+        "idade": 2,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/509920a5-c176-4925-86dd-da041d755c1e.jpeg"
+    },
+    {
+        "id": 30,
+        "nome": "Belinha",
+        "tipo": "cachorro",
+        "local": "Petz Parque Flamboyant, GOIANIA, GO",
+        "idade": 3,
+        "image": "https:\/\/s3.amazonaws.com\/petz-cdm-stg\/38aef2e0-4696-4a02-80c6-d951c85c7cb2.jpeg"
+    }
+]
