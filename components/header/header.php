@@ -15,7 +15,7 @@
 
   <nav class="navbar">
     <div class="left-side">
-      <a href="#" class="brand-name">
+      <a href="../../index.php" class="brand-name">
         <span class="brand-text">Amigos de Pata</span>
       </a>
     </div>

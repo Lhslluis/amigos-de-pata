@@ -37,11 +37,26 @@
 	<?php include '../../components/header/header.php' ?>
 
   <div class='container'>
-    <img src=<?php echo $animal['image'] ?>>
     <h1><?php echo $animal['nome'] ?></h1>
-    <p><?php echo $animal['tipo'] ?></p>
-    <p><?php echo $animal['local'] ?></p>
-    <p><?php echo $animal['idade'] ?></p>
+    <div class="container-info">
+        <div class="preview">
+            <img src=<?php echo $animal['image'] ?>>
+        </div>
+        <div class="info">
+            <div>
+                <p class='label'>Espécie</p>
+                <p class='value'><?php echo $animal['tipo'] ?></p>
+            </div>
+            <div>
+                <p class='label'>Localização</p>
+                <p class='value'><?php echo $animal['local'] ?></p>
+            </div>
+            <div>
+                <p class='label'>Idade</p>
+                <p class='value'><?php echo $animal['idade'] ?></p>
+            </div>
+        </div>
+    </div>
   </div>
 </body>
 </html>
