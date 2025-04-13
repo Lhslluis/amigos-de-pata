@@ -15,7 +15,7 @@
 
   <nav class="navbar">
     <div class="left-side">
-      <a href="../../index.php" class="brand-name">
+      <a href="/amigos-de-pata" class="brand-name">
         <span class="brand-text">Amigos de Pata</span>
       </a>
     </div>
@@ -25,13 +25,7 @@
       <a href="#" class="highlight">🐾 Adoção</a>
     </div>
 
-    <div class="login">
-      <button class="dropbtn">🔒 Login</button>
-      <div class="dropdown-content">
-        <a href="#">Entrar</a>
-        <a href="#">Cadastrar</a>
-      </div>
-    </div>
+    <a href="/amigos-de-pata/pages/login/login.php" class="login">🔒 Login</a>
   </nav>
 </header>
 	
