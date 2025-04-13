@@ -48,13 +48,16 @@
                 <p class='value'><?php echo $animal['tipo'] ?></p>
             </div>
             <div>
-                <p class='label'>Localização</p>
-                <p class='value'><?php echo $animal['local'] ?></p>
-            </div>
-            <div>
                 <p class='label'>Idade</p>
                 <p class='value'><?php echo $animal['idade'] ?></p>
             </div>
+            <div>
+                <p class='label'>Localização</p>
+                <p class='value'><?php echo $animal['local'] ?></p>
+            </div>
+            <button class="adotar-btn">
+              Adoção
+            </button>
         </div>
     </div>
   </div>
