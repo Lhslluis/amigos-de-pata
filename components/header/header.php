@@ -21,7 +21,7 @@
     </div>
 
     <div class="center-item">
-      <a href="#" class="highlight">🐾 Adoção</a>
+      <a href="/amigos-de-pata" class="highlight">🐾 Adoção</a>
     </div>
 
     <a href="/amigos-de-pata/pages/login/login.php" class="login">🔒 Login</a>

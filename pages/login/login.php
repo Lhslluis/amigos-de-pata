@@ -1,3 +1,24 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/amigos-de-pata/functions/utils.php';
+
+$username = $_POST['username'] ?? null;
+$password = $_POST['password'] ?? null;
+
+if ($username && $password) {
+    $logado = logarAdmin($username, $password);
+
+    if ($logado) {
+        $expiracao = time() + 3600; // 1 Hora
+        setcookie('logado', true, $expiracao, '/');
+
+        header('Location: /amigos-de-pata/pages/admin/cadastro/cadastro.php');
+        exit;
+    } else {
+        $erroLogin = true;
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +33,32 @@
     <link rel="stylesheet" href="/amigos-de-pata/reset.css">
     <link rel="stylesheet" href="/amigos-de-pata/style.css">
 
-    <!-- <link rel="stylesheet" href="../../components/header/header.css">
-    <link rel="stylesheet" href="login.css"> -->
+    <link rel="stylesheet" href="/amigos-de-pata/components/header/header.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/amigos-de-pata/components/header/header.php' ?>
 
-    FUFADHFUAHFA
+    <div class="container">
+        <div class='login-card'>
+            <h1>Logar no Sistema</h1>
+            <form action="login.php" method="POST">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Entrar</button>
+                <?php
+                    if ($erroLogin) {
+                        echo "<p class='error-message'>Login inválido</p>";
+                    }
+                ?>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

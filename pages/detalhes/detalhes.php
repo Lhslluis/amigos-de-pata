@@ -30,34 +30,36 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   
-  <link rel="stylesheet" href="../../components/header/header.css">
-  <link rel="stylesheet" href="./detalhes.css">
+  <link rel="stylesheet" href="/amigos-de-pata/components/header/header.css">
+  <link rel="stylesheet" href="/amigos-de-pata/pages/detalhes/detalhes.css">
 </head>
 <body>
-	<?php include '../../components/header/header.php' ?>
+	<?php include_once $_SERVER['DOCUMENT_ROOT'].'/amigos-de-pata/components/header/header.php' ?>
 
   <div class='container'>
-    <h1><?php echo $animal['nome'] ?></h1>
-    <div class="container-info">
-        <div class="preview">
-            <img src=<?php echo $animal['image'] ?>>
-        </div>
-        <div class="info">
-            <div>
-                <p class='label'>Espécie</p>
-                <p class='value'><?php echo $animal['tipo'] ?></p>
+    <div class='container-into'>
+        <h1><?php echo $animal['nome'] ?></h1>
+        <div class="container-info">
+            <div class="preview">
+                <img src=<?php echo $animal['image'] ?>>
             </div>
-            <div>
-                <p class='label'>Idade</p>
-                <p class='value'><?php echo $animal['idade'] ?></p>
+            <div class="info">
+                <div>
+                    <p class='label'>Espécie</p>
+                    <p class='value'><?php echo $animal['tipo'] ?></p>
+                </div>
+                <div>
+                    <p class='label'>Idade</p>
+                    <p class='value'><?php echo $animal['idade'] ?></p>
+                </div>
+                <div>
+                    <p class='label'>Localização</p>
+                    <p class='value'><?php echo $animal['local'] ?></p>
+                </div>
+                <button class="adotar-btn">
+                  Adotar animalzinho
+                </button>
             </div>
-            <div>
-                <p class='label'>Localização</p>
-                <p class='value'><?php echo $animal['local'] ?></p>
-            </div>
-            <button class="adotar-btn">
-              Adoção
-            </button>
         </div>
     </div>
   </div>

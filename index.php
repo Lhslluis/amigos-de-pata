@@ -1,6 +1,23 @@
 <?php
-	$dadosJson = file_get_contents('animais.json');
-  $animais = json_decode($dadosJson, true);
+        $dadosJson = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/amigos-de-pata/animais.json');
+        $todosAnimais = json_decode($dadosJson, true);
+
+        $search = $_GET['search'] ?? '';
+
+        if ($search) {
+            $searchLower = strtolower($search);
+
+            $animaisFiltrados = array_filter($todosAnimais, function($animal) use ($searchLower) {
+                return 
+                    strpos(strtolower($animal['nome']), $searchLower) !== false ||
+                    strpos(strtolower($animal['tipo']), $searchLower) !== false ||
+                    strpos(strtolower($animal['local']), $searchLower) !== false ||
+                    strpos((string)$animal['idade'], $searchLower) !== false;
+            });
+            
+        } else {
+            $animaisFiltrados = $todosAnimais;
+        }
 ?>
 
 <!DOCTYPE html>
@@ -15,19 +32,28 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   
-  <link rel="stylesheet" href="./components/header/header.css">
-  <link rel="stylesheet" href="./components/card/card.css">
+  <link rel="stylesheet" href="/amigos-de-pata/components/header/header.css">
+  <link rel="stylesheet" href="/amigos-de-pata/components/card/card.css">
 </head>
 <body>
-	<?php include './components/card/card.php' ?>
+	<?php include $_SERVER['DOCUMENT_ROOT'].'/amigos-de-pata/components/card/card.php' ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/amigos-de-pata/components/header/header.php' ?>
 
-	<?php include './components/header/header.php' ?>
-  <ul class='card-list'>
-    <?php foreach ($animais as $animal): ?>
-      <li>
-        <?php exibirCard($animal['id'], $animal['nome'], $animal['tipo'], $animal['local'], $animal['idade'], $animal['image']) ?>
-      </li>
-    <?php endforeach; ?>
+    <ul class='card-list'>
+        <form method="GET" action="index.php">
+            <div class="input-group">
+                <label for="search">Pesquisar</label>
+                <input type="text" name="search" placeholder="Pesquise por qualquer info...">
+            </div>
+            <button type="submit">Buscar</button>
+        </form>
+        <div class='animals-list'>
+            <?php foreach ($animaisFiltrados as $animal): ?>
+                <li>
+                    <?php exibirCard($animal['id'], $animal['nome'], $animal['tipo'], $animal['local'], $animal['idade'], $animal['image']) ?>
+                </li>
+            <?php endforeach; ?>
+        </div>
   </ul>
 </body>
 </html>
