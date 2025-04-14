@@ -1,178 +1,133 @@
-	.header {
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 1000;
-		background: linear-gradient(135deg, #89f7fe, #66a6ff);
-		color: #ffffff;
-		width: 100%;
-		padding: 20px 40px;
-		font-family: 'Baloo 2', cursive;
-		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    color: #ffffff;
+    width: 100%;
+    padding: 20px 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
 
-        box-sizing: border-box;
-        max-width: 100%;
-	}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 
-	.header-container {
-		position: relative;
-	}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
 
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        gap: 100px;
-    }
+.left-side {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
 
-    /* Nome do site (esquerda) */
-    .left-side {
-        position: absolute;
-        left: 40px;
-    }
+.brand-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 6px 18px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 
-    .brand-name {
-        font-family: 'Baloo 2', cursive;
-        font-size: 1.8rem;
-        font-weight: bold;
-        color: #ffffff;
-        background-color: rgba(255, 255, 255, 0.15);
-        padding: 6px 18px;
-        border-radius: 25px;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-        text-decoration: none;
-        transition: transform 0.3s ease, background-color 0.3s ease;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-    }
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
 
-    .brand-name:hover {
-        transform: scale(1.05);
-        background-color: rgba(255, 255, 255, 0.25);
-    }
+.brand-name:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.25);
+}
 
-    /* Centro com botões */
-    .center-item {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
+.center-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
-    /* Login no lado direito */
-    .login {
-        position: absolute;
-        right: 40px;
-        display: flex;
-        align-items: center;
-    }
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
-    /* Botão de Login */
-    .login .dropbtn {
-        background: none;
-        border: none;
-        color: #ffffff;
-        font-weight: 500;
-        font-size: 1.05rem;
-        cursor: pointer;
-        padding: 8px 16px;
-        border-radius: 20px;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
+.login .dropbtn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.05rem;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-    .login .dropbtn:hover {
-        background-color: #ffffff;
-        color: #66a6ff;
-    }
+.login .dropbtn:hover {
+    background-color: #ffffff;
+    color: #66a6ff;
+}
 
-    .login {
-        background-color: black;
-        border-radius: 8px;
-        padding: 10px 16px;
-        text-decoration: none;
-        color: #66a6ff;
-        font-weight: 500;
-        transition: background-color 0.3s ease;
-    }
+.login {
+    background-color: black;
+    border-radius: 8px;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #66a6ff;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
 
-    .login:hover {
-        background-color: #f0f8ff;
-    }
+.login:hover {
+    background-color: #f0f8ff;
+}
 
-    /* Mostrar dropdown no hover */
-    .login:hover {
-        display: flex;
-    }
+.highlight {
+    background-color: #ffffff;
+    color: #66a6ff;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    animation: iceGlow 2.5s infinite ease-in-out;
+}
 
-    /* Botão de destaque "Adoção" */
-    .highlight {
-        background-color: #ffffff;
-        color: #66a6ff;
-        padding: 8px 16px;
-        border-radius: 25px;
-        font-weight: bold;
-        text-decoration: none;
-        font-size: 1.1rem;
-        animation: iceGlow 2.5s infinite ease-in-out;
-    }
+@keyframes iceGlow {
+    0% { box-shadow: 0 0 5px #c0faff, 0 0 10px #c0faff; }
+    50% { box-shadow: 0 0 15px #a0f0ff, 0 0 25px #a0f0ff; }
+    100% { box-shadow: 0 0 5px #c0faff, 0 0 10px #c0faff; }
+}
 
-    /* Botão de Filtro */
-    .filter-btn {
-        background-color: rgba(255, 255, 255, 0.2);
-        color: #ffffff;
-        padding: 8px 16px;
-        border-radius: 20px;
-        font-weight: 500;
-        text-decoration: none;
-        font-size: 1.05rem;
-        border: 1px solid #ffffff55;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
+body {
+    padding-top: 80px;
+}
 
-    .filter-btn:hover {
-        background-color: #ffffff;
-        color: #66a6ff;
-    }
-
-    /* Efeito glow no botão de Adoção */
-    @keyframes iceGlow {
-        0% {
-            box-shadow: 0 0 5px #c0faff, 0 0 10px #c0faff;
-        }
-        50% {
-            box-shadow: 0 0 15px #a0f0ff, 0 0 25px #a0f0ff;
-        }
-        100% {
-            box-shadow: 0 0 5px #c0faff, 0 0 10px #c0faff;
-        }
-    }
-
-    /* Espaço no body para o header fixo */
-    body {
-        padding-top: 80px;
-    }
-
-	/* Container das patinhas */
 .paw-header-bg {
-	position: absolute;
-	inset: 0;
-	overflow: hidden;
-	pointer-events: none;
-	z-index: 0;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
 }
 
-/* Pegadas fixas piscando */
-/* Pegadas fixas e visíveis */
 .floating-paw {
-	position: absolute;
-	font-size: 2.2rem;
-	color: rgba(255, 255, 255, 0.4); /* Mais visível */
-	animation: pawBlink 8s infinite ease-in-out;
-	opacity: 0;
+    position: absolute;
+    font-size: 2.2rem;
+    color: rgba(255, 255, 255, 0.4); /* Mais visível */
+    animation: pawBlink 8s infinite ease-in-out;
+    opacity: 0;
 }
 
-/* Cada delay e posição diferente para criar o efeito de trilha */
 .delay-0 { top: 20%; left: 5%;  animation-delay: 0s; }
 .delay-1 { top: 28%; left: 15%; animation-delay: 0.5s; }
 .delay-2 { top: 35%; left: 25%; animation-delay: 1s; }
@@ -184,22 +139,12 @@
 .delay-8 { top: 78%; left: 85%; animation-delay: 4s; }
 .delay-9 { top: 85%; left: 95%; animation-delay: 4.5s; }
 
-/* Animação de pisada */
 @keyframes pawBlink {
-	0%   { opacity: 0; transform: scale(0.8); }
-	5%   { opacity: 1; transform: scale(1.1); }
-	15%  { opacity: 1; transform: scale(1); }
-	25%  { opacity: 0; transform: scale(0.9); }
-	100% { opacity: 0; }
-
-
-	
-
-
+    0%   { opacity: 0; transform: scale(0.8); }
+    5%   { opacity: 1; transform: scale(1.1); }
+    15%  { opacity: 1; transform: scale(1); }
+    25%  { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 0; }
 }
 
-
-
-
-		
-		
+  

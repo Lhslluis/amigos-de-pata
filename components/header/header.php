@@ -21,7 +21,6 @@
     </div>
 
     <div class="center-item">
-      <a href="#" class="filter-btn">Filtro</a>
       <a href="#" class="highlight">🐾 Adoção</a>
     </div>
 
